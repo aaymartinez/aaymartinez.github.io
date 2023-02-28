@@ -1,0 +1,39 @@
+<?php
+$link = '';
+if (isset($_GET['l'])) {
+    $link = './' . $_GET['l'] . '.php';
+} else {
+    $link = './intro.php';
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <?php include_once './partials/header.php'; ?>
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="border-frame"></div>
+    <div class="main">
+        <div class="info">
+            <h4><strong>Alva Adrian Martinez</strong></h4>
+            <em>Web Developer</em>
+        </div>
+
+        <div class="menu">
+            <?php include_once './partials/navbar.php' ?>
+        </div>
+
+        <div class="content">
+            <?php include_once $link; ?>
+        </div>
+    </div>
+
+    <?php include_once './partials/footer.php'; ?>
+</body>
+
+
+</html>
