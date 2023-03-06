@@ -156,9 +156,10 @@ body {
 }
 
 /* projects */
-/* .projects {
-    white-space: initial;
-} */
+.projects .card img {
+    height: 10%;
+    
+}
 
 
 @media (max-width: 575.98px) {
